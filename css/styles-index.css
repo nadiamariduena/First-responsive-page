@@ -2,7 +2,7 @@
 *::before,
 *::after {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   box-sizing: border-box;
 }
 /* Why does property specified under * selector work for some but no others?
@@ -181,22 +181,22 @@ body {
 
   .child2 {
     width: 100%;
-    height: 50%;
-    background-color: transparent;
+    height: 100%;
+    background-color: yellow;
     position: relative;
   }
 
   .ch-img1 {
     position: absolute;
 
-    top: 25%;
+    top: 20%;
     left: 20%;
     z-index: 1;
   }
   .ch-img2 {
     position: absolute;
 
-    top: 22%;
+    top: 15%;
     left: 42%;
   }
 }
@@ -281,7 +281,7 @@ body {
 
   .child1 {
     width: 100%;
-    height: 50%;
+    height: auto;
     background-color: transparent;
   }
   /* -------1----------- */
@@ -357,8 +357,9 @@ body {
 
   .child2 {
     width: 100%;
-    height: 50%;
-    background-color: transparent;
+    height: 50vh;
+    background-color: transparent; /*I changed this and after that the boxes images
+    didnt collapse anymore, so child one has a height of 50% and  child2 50vh, it shouldnt be like that*/
     position: relative;
   }
 
